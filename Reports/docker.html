@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>docker.html</h1>
-    <p>Report generated on 11-Feb-2021 at 01:49:01 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 11-Feb-2021 at 02:11:48 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -259,7 +259,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.9.0</td></tr></table>
     <h2>Summary</h2>
-    <p>9 tests ran in 54.39 seconds. </p>
+    <p>9 tests ran in 54.04 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">6 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">3 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -275,34 +275,34 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">Tests/test_HomePage.py::TestHomePage::test_navigate_to_last_page[chrome]</td>
-          <td class="col-duration">14.26</td>
+          <td class="col-duration">13.58</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/>[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/><br/>self = &lt;Tests.test_HomePage.TestHomePage object at 0x00000227302886A0&gt;<br/><br/>    def test_navigate_to_last_page(self):<br/>        self.main_page = MainPage(self.driver)<br/>        signin_page = self.main_page.click_signin_button()<br/>        home_page = signin_page.do_login(TestData.DOCKER_ID, TestData.PASSWORD)<br/>        home_page.search_with_keyword(TestData.SEARCH_CRITERIA_1)<br/>        broken_page = home_page.check_last_page_validity()<br/>&gt;       assert broken_page is False<br/><span class="error">E       assert True is False</span><br/><br/>Tests\test_HomePage.py:22: AssertionError[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/></div></td></tr></tbody>
+            <div class="log">[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/>[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/><br/>self = &lt;Tests.test_HomePage.TestHomePage object at 0x000001FADB895D60&gt;<br/><br/>    def test_navigate_to_last_page(self):<br/>        self.main_page = MainPage(self.driver)<br/>        signin_page = self.main_page.click_signin_button()<br/>        home_page = signin_page.do_login(TestData.DOCKER_ID, TestData.PASSWORD)<br/>        home_page.search_with_keyword(TestData.SEARCH_CRITERIA_1)<br/>        broken_page = home_page.check_last_page_validity()<br/>&gt;       assert broken_page is False<br/><span class="error">E       assert True is False</span><br/><br/>Tests\test_HomePage.py:22: AssertionError[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">Tests/test_SearchPage.py::TestSearchPage::test_search_from_icon_click[chrome]</td>
-          <td class="col-duration">9.51</td>
+          <td class="col-duration">5.45</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/>[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/><br/>self = &lt;Tests.test_SearchPage.TestSearchPage object at 0x00000227302BD220&gt;<br/><br/>    def test_search_from_icon_click(self):<br/>        self.main_page = MainPage(self.driver)<br/>        self.main_page.click_search_image()<br/>        search_page = self.main_page.click_search_text(TestData.SEARCH_CRITERIA_2)<br/>        value = search_page.check_search_results_search_image_click()<br/>&gt;       assert value == TestData.SEARCH_CRITERIA_2<br/><span class="error">E       AssertionError: assert &#x27;undefined&#x27; == &#x27;Testing&#x27;</span><br/><span class="error">E         - Testing</span><br/><span class="error">E         + undefined</span><br/><br/>Tests\test_SearchPage.py:20: AssertionError[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/></div></td></tr></tbody>
+            <div class="log">[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/>[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/><br/>self = &lt;Tests.test_SearchPage.TestSearchPage object at 0x000001FADB8CC160&gt;<br/><br/>    def test_search_from_icon_click(self):<br/>        self.main_page = MainPage(self.driver)<br/>        self.main_page.click_search_image()<br/>        search_page = self.main_page.click_search_text(TestData.SEARCH_CRITERIA_2)<br/>        value = search_page.check_search_results_search_image_click()<br/>&gt;       assert value == TestData.SEARCH_CRITERIA_2<br/><span class="error">E       AssertionError: assert &#x27;undefined&#x27; == &#x27;Testing&#x27;</span><br/><span class="error">E         - Testing</span><br/><span class="error">E         + undefined</span><br/><br/>Tests\test_SearchPage.py:20: AssertionError[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/></div></td></tr></tbody>
       <tbody class="failed results-table-row">
         <tr>
           <td class="col-result">Failed</td>
           <td class="col-name">Tests/test_SignUpPage.py::TestSignUpPage::test_copy_password[chrome]</td>
-          <td class="col-duration">9.74</td>
+          <td class="col-duration">11.01</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="log">[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/>[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/><br/>self = &lt;Tests.test_SignUpPage.TestSignUpPage object at 0x000002273030B5E0&gt;<br/><br/>    def test_copy_password(self):<br/>        self.main_page = MainPage(self.driver)<br/>        signin_page = self.main_page.click_signin_button()<br/>        signup_page = signin_page.click_signup_link()<br/>        text = signup_page.copy_password_text(TestData.PASS_2)<br/>&gt;       assert text == TestData.PASS_2<br/><span class="error">E       AssertionError: assert &#x27;&#x27; == &#x27;testtest123&#x27;</span><br/><span class="error">E         - testtest123</span><br/><br/>Tests\test_SignUpPage.py:18: AssertionError[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/></div></td></tr></tbody>
+            <div class="log">[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/>[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/><br/>self = &lt;Tests.test_SignUpPage.TestSignUpPage object at 0x000001FADB91B730&gt;<br/><br/>    def test_copy_password(self):<br/>        self.main_page = MainPage(self.driver)<br/>        signin_page = self.main_page.click_signin_button()<br/>        signup_page = signin_page.click_signup_link()<br/>        text = signup_page.copy_password_text(TestData.PASS_2)<br/>&gt;       assert text == TestData.PASS_2<br/><span class="error">E       AssertionError: assert &#x27;&#x27; == &#x27;testtest123&#x27;</span><br/><span class="error">E         - testtest123</span><br/><br/>Tests\test_SignUpPage.py:18: AssertionError[gw2] win32 -- Python 3.9.0 c:\users\harin\pycharmprojects\docker_website_automation\venv\scripts\python.exe<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_ForgotPage.py::TestForgotPage::test_forgot_link[chrome]</td>
-          <td class="col-duration">10.43</td>
+          <td class="col-duration">10.82</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -311,7 +311,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_ForgotPage.py::TestForgotPage::test_no_email_entered[chrome]</td>
-          <td class="col-duration">10.92</td>
+          <td class="col-duration">11.01</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -320,7 +320,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_MainPage.py::TestMainPage::test_click_signin[chrome]</td>
-          <td class="col-duration">6.00</td>
+          <td class="col-duration">5.52</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -329,7 +329,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_HomePage.py::TestHomePage::test_back_button_after_logout[chrome]</td>
-          <td class="col-duration">11.26</td>
+          <td class="col-duration">12.62</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -338,7 +338,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_SignInPage.py::TestSignInPage::test_login[chrome]</td>
-          <td class="col-duration">6.18</td>
+          <td class="col-duration">9.41</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
@@ -347,7 +347,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">Tests/test_SignInPage.py::TestSignInPage::test_invalid_password[chrome]</td>
-          <td class="col-duration">9.69</td>
+          <td class="col-duration">9.70</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
