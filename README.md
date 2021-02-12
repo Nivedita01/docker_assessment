@@ -11,7 +11,10 @@ Steps to configure this project into your system.
 3. Once the project is cloned, open the cloned project in a code editor like Pycharm
 
 4. Open terminal and activate virtual environment using the command
+
           .\venv\Scripts\activate
+          
+   Note: If there is another venv active on your workspace by default, use 'deactivate' command first and then use the above command.
 
 5. Install requirements.txt on this virtual environment using the command
 
