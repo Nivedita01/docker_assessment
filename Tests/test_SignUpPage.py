@@ -15,4 +15,4 @@ class TestSignUpPage(TestBasePage):
         signin_page = self.main_page.click_signin_button()
         signup_page = signin_page.click_signup_link()
         text = signup_page.copy_password_text(TestData.PASS_2)
-        assert text == TestData.PASS_2
+        assert text == TestData.PASS_2, "EXPECTED: testtest123, ACTUAL: ' '"

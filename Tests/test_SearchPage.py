@@ -17,7 +17,7 @@ class TestSearchPage(TestBasePage):
         self.main_page.click_search_image()
         search_page = self.main_page.click_search_text(TestData.SEARCH_CRITERIA_2)
         value = search_page.check_search_results_search_image_click()
-        assert value == TestData.SEARCH_CRITERIA_2
+        assert value == TestData.SEARCH_CRITERIA_2, "EXPECTED: Testing, ACTUAL: undefined"
 
     # def test_search_bar_overlap(self):
     #     self.main_page = MainPage(self.driver)

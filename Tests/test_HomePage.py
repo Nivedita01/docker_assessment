@@ -19,7 +19,8 @@ class TestHomePage(TestBasePage):
         home_page = signin_page.do_login(TestData.DOCKER_ID, TestData.PASSWORD)
         home_page.search_with_keyword(TestData.SEARCH_CRITERIA_1)
         broken_page = home_page.check_last_page_validity()
-        assert broken_page is False
+        assert broken_page is False, "EXPECTED: Search page functionality should not be broken, ACTUAL: search " \
+                                     "functionality is broken "
 
     """NEGATIVE TEST CASE"""
     """Testing for session management once the user is logged out by clicking the back button on browser"""

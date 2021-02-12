@@ -4,7 +4,6 @@ class TestData:
 
     HOME_URL = "https://www.docker.com/"
     DOCKER_ID = "111docker345"
-    # USERNAME = "nivedita.hari@yahoo.com"
     PASSWORD = "DOCKER2222"
 
     INVALID_DOCKER_ID = "111docker23"
