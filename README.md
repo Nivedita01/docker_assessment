@@ -22,5 +22,5 @@ Steps to configure this project into your system.
 
 6. Run test suite using the command 
 
-          pytest -n 3 –html=Reports/docker.html
+          pytest -n 3 --html=Reports/docker.html
 
